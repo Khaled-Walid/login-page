@@ -41,7 +41,7 @@ function Login(props) {
   // const [passwordIsValid, setPasswordIsValid] = useState();
   const [formIsValid, setFormIsValid] = useState(false);
   const { isValid: emailIsValid } = emailState;
-  const { isValid:  } = passwordState;
+  const { isValid: passwordIsValid } = passwordState;
   useEffect(() => {
     const timer = setTimeout(() => {
       setFormIsValid(emailIsValid && passwordIsValid);
